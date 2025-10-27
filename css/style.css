@@ -1,0 +1,32 @@
+@media (max-width: 800px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+/* Ce que fait media : */
+  #partie_gauche, #partie_droite {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+}
+.col_gauche{
+  background-color: rgb(170, 170, 205);
+}
+.col_droite{
+  background-color: white;
+}
+#section1{
+  background-color: rgb(170, 170, 205);
+}
+#section3{
+  background-color: rgb(170, 170, 205);
+}
+#section5{
+  background-color: rgb(170, 170, 205);
+}
+.progress-bar{
+  background-color: black;
+}
