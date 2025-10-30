@@ -13,7 +13,6 @@
   
   <!-- Feuille de style personnelle -->
   <link rel="stylesheet" href="../css/style.css">
-  
   <title>Curriculum Vitae</title>
 </head>
 
@@ -22,7 +21,7 @@
     <div class="row">
 
       <!-- ==================== DEBUT COLONNE GAUCHE ==================== -->
-      <div id="partie_gauche" class="col-md-4 col-12 col_gauche g-0">  <!--Pour gérer la grille, on doit faire col-md-4 col-12-->
+      <div id="partie_gauche" class="col-md-4 col_gauche g-0">  <!--Pour gérer la grille, on doit faire col-md-4 col-12-->
 
         <!-- Photo de profil -->
         <div id="monphotodeprofil" class="text-center mt-3">
@@ -31,7 +30,9 @@
 
         <!-- Section PROFIL -->
         <div id="profil" class="px-5 mt-3">
-          <div class="fs-5 fw-bold mb-2">PROFIL</div>
+          <div class="fs-5 fw-bold mb-2">
+            PROFIL
+          </div>
           <p>
             Je suis un étudiant en licence 2 informatique à 
             l’Université Iba Der Thiam de Thiès. Je suis un grand passionné de l'informatique
@@ -43,7 +44,9 @@
 
         <!-- Section CONTACT -->
         <div id="contact" class="px-5 mt-3">
-          <div class="fs-5 fw-bold mb-2">CONTACT</div>
+          <div class="fs-5 fw-bold mb-2">
+            CONTACT
+          </div>
 
           <!-- Téléphone -->
           <div class="mb-2">
@@ -74,7 +77,9 @@
 
         <!-- Section LANGUES -->
         <div id="langue" class="px-5 mt-3">
-          <div class="fs-5 fw-bold mb-3">LANGUES</div>
+          <div class="fs-5 fw-bold mb-3">
+            LANGUES
+          </div>
 
           <!-- Langue 1 -->
           <div class="row align-items-center mb-2">
@@ -108,8 +113,10 @@
         </div>
 
         <!-- Section COMPÉTENCES EXTRAPROFESSIONNELLES -->
-        <div id="competences_extrapro" class="px-5 mt-3">
-          <div class="fs-5 fw-bold mb-2">COMPÉTENCES EXTRAPRO</div>
+        <div class="px-5 mt-3">
+          <div class="fs-5 fw-bold mb-2">
+            COMPÉTENCES EXTRAPROFESSIONNELLES   
+          </div>
           <ul>
             <li>Dactylographie</li>
             <li>Élevage</li>
@@ -148,11 +155,17 @@
       <!-- ==========******** DEBUT COLONNE DROITE *********============== -->
       <div id="partie_droite" class="col-md-8 col-12 col_droite px-3 g-0">
         <div id="PrenomEtNoms">
-            <div class="fs-1 fw-bold mt-3">EL HADJI MALICK SY</div>
-            <div class="fs-3 mt-1">Etudiant / Informatique</div>
+            <div id="nom" class="fs-1 fw-bold mt-3">
+              EL HADJI MALICK SY
+           </div>
+            <div class="fs-3 mt-1 ">
+              Etudiant / Informatique
+              </div>
             <!-- Div du parcours academique -->
             <div id="ParcoursAcad">
-              <div id="section1" class="fs-3 mt-3 ps-3 fw-bold">PARCOURS ACADEMIQUE</div>
+              <div id="section1" class="fs-3 mt-3 ps-3 fw-bold titre-defilant">
+                PARCOURS ACADEMIQUE  
+            </div>
               <div id="PartieAremplir" class="mt-3">
                 <ul>
                    <li><dt>2025/2024</dt></li> 
@@ -173,7 +186,9 @@
 
         <!-- Div compétences technique -->
          <div id="competences">
-              <div id="section3" class="fs-3 mt-3 ps-3 fw-bold">COMPETENCES TECHNIQUES</div>
+              <div id="section3" class="fs-3 mt-3 ps-3 fw-bold titre-defilant">
+                COMPETENCES TECHNIQUES
+              </div>
               <div id="PartieAremplir" class="mt-3">
                 <ul>
                     <li>SQL</li>
@@ -191,7 +206,9 @@
             <!-- fin div compétences technique -->
          <!-- Travaux réalisés -->
           <div id="travaux">
-              <div id="section5" class="fs-3 mt-3 ps-3 fw-bold">TRAVAUX REALISES</div>
+              <div id="section5" class="fs-3 mt-3 ps-3 fw-bold">
+                TRAVAUX REALISES
+            </div>
               <div id="PartieAremplir" class="mt-3">
                 <ul>
                     <li>Système de gestion des prêts d'une bibliothèque universitaire</li>
@@ -209,5 +226,6 @@
 
     </div> <!-- fin .row -->
   </main>
+  <script src="../JS/cv.js"></script>
 </body>
 </html>

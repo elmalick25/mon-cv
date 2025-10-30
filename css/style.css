@@ -16,3 +16,10 @@
 .progress-bar{
   background-color: black;
 }
+#nom{
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: transform 3s linear;
+}
