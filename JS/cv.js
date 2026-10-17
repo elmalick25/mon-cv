@@ -1,30 +1,25 @@
   document.addEventListener("DOMContentLoaded", function () {
-    const nomElement = document.getElementById("nom");
+    const nomElement = document.getElementById("nom"); 
     const nomComplet = "EL HADJI MALICK SY";
-    let index = 0;
-
+    let position = 0;
     function taper() {
-      // Réinitialise
       nomElement.textContent = '';
       nomElement.classList.remove("paused");
-      index = 0;
+      position = 0;
 
       const interval = setInterval(() => {
-        if (index < nomComplet.length) {
-          nomElement.textContent += nomComplet[index];
-          index++;
+        if (position < nomComplet.length) {
+          nomElement.textContent += nomComplet[position];
+          position++;
         } else {
           clearInterval(interval);
-          nomElement.classList.add("paused"); // Cache le curseur
+          nomElement.classList.add("paused"); 
 
-          // Pause de 3 secondes
           setTimeout(() => {
-            taper(); // Recommence
+            taper();
           }, 3000);
         }
-      }, 120); // Vitesse de frappe (120ms par lettre)
+      }, 120); 
     }
-
-    // Démarre après 1 seconde
     setTimeout(taper, 1000);
   });
