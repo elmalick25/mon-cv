@@ -1,25 +1,17 @@
-  document.addEventListener("DOMContentLoaded", function () {
-    const nomElement = document.getElementById("nom"); 
-    const nomComplet = "EL HADJI MALICK SY";
-    let position = 0;
-    function taper() {
-      nomElement.textContent = '';
-      nomElement.classList.remove("paused");
-      position = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  // Bouton d'impression / Export PDF A4 direct
+  const printBtn = document.getElementById("btn-print-cv");
+  if (printBtn) {
+    printBtn.addEventListener("click", function () {
+      window.print();
+    });
+  }
 
-      const interval = setInterval(() => {
-        if (position < nomComplet.length) {
-          nomElement.textContent += nomComplet[position];
-          position++;
-        } else {
-          clearInterval(interval);
-          nomElement.classList.add("paused"); 
-
-          setTimeout(() => {
-            taper();
-          }, 3000);
-        }
-      }, 120); 
-    }
-    setTimeout(taper, 1000);
-  });
+  // Déclenchement automatique de l'impression si l'URL contient ?print=1
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("print") === "1") {
+    setTimeout(() => {
+      window.print();
+    }, 350);
+  }
+});
